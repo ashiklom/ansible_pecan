@@ -1,0 +1,9 @@
+[pecan]
+testpecan	ansible_host=test-pecan.bu.edu
+pecan1		ansible_host=pecan1.bu.edu
+pecan2		ansible_host=pecan2.bu.edu
+
+[pecan:vars]
+install_basepath=/fs/data3/USER_DIR
+install_prefix=ansible_pecan
+github_user=pecanproject

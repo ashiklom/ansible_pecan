@@ -1,0 +1,5 @@
+---
+- hosts: pecan
+  tasks:
+      - name: Clone/update PEcAn into host-specific directory
+        git: "repo=git://github.com/{{ github_user }}/pecan refspec=develop dest={{ install_basepath }}/{{ install_prefix }}.{{ ansible_nodename }}"
